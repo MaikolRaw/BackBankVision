@@ -4,11 +4,10 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection ="Users")
-
 public class Users {
 
     @Id
-    private int userId;
+    private int userId; // Cambio de tipo de dato a int
     private String identificationType;
     private String dateOfBirth;
     private String phoneNumber;
@@ -25,13 +24,11 @@ public class Users {
         this.role = role;
     }
 
- 
-
     public int getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(int userId) { // Cambio de tipo de dato del parámetro
         this.userId = userId;
     }
 
